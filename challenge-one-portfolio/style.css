@@ -1,0 +1,265 @@
+:root {
+    --cor-de-fundo: #F5F5F5;
+    --cor-de-fundo-menu: #ffffff;
+    --cor-do-link: #000000;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    padding: 15px;
+    background-color: var(--cor-de-fundo-menu);
+}
+
+/* ------------------------------ Seção Menu -------------------------------*/
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--cor-de-fundo-menu);
+    margin: 0rem 0rem 1rem 0rem;
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.navegacao__lista {
+    display: flex;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Seção Apresentação ------------------------------*/
+
+.apresentacao__foto{
+    margin: auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+
+.apresentacao__titulo{
+    display: flex, block;
+    text-align: center;
+    padding: 0rem 2rem;
+}
+
+.apresentacao__subtitulo{
+    display: flex;
+    padding: 0rem 2rem; 
+}
+
+.redes__titulo{
+    display: flex;
+    padding: 2rem;
+}
+
+.redes{
+    display: flex;
+    padding: 0rem 0rem 1rem 2rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.redes__imagens{
+    display: flex;
+    gap: 20px;
+}
+
+/* ------------------------------ Seção Sobre mim ----------------------------------*/
+
+.sobre-mim__titulo{
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+.sobre-mim__texto{
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+/*------------------------------ Seção de Habilidades ------------------------------*/
+
+.habilidades__titulo{
+    padding: 2rem;
+}
+
+
+.habilidades__lista{
+    display: flex;
+    padding: 1rem 2rem 2rem 2rem;
+    gap: 5rem;
+}
+
+.habilidades__elemento{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.habilidades__icone{
+    margin: auto;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    width: 2rem; 
+    height: 2rem;
+}
+
+
+
+/*------------------------------ Seção de Hobbies --------------------------------*/
+
+.hobbies__titulo{
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+.hobbies__texto{
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+/*------------------------------ Seção de Projetos --------------------------------*/
+
+.projetos__titulo{
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+
+.projetos__nome{
+    display: flex;
+    padding: 0rem 2rem;
+}
+
+.projetos__foto{
+    padding: 0rem 2rem;
+    width: 800px;
+    height: 400px;
+}
+
+.projeto__link{
+    display: flex;
+    padding: 0rem 2rem;
+    text-decoration: underline black;
+    gap: 15px;
+}
+
+.projetos__descricao{
+    display: flex;
+    padding: 0rem 2rem 2rem;
+}
+
+/*------------------------------ Seção de Formação --------------------------------*/
+
+.formacao__titulo{
+    padding: 2rem;
+}
+
+.formacao__lista{
+    display: flex;
+    padding: 2rem;
+    gap: 5rem;
+}
+
+
+/* ------------------------------ Responsividade ---------------------------------------*/
+
+/* Tablets e telas maiores */
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .habilidades__lista{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 2rem 2rem 2rem;
+        gap: 2rem;
+    }
+
+    .formacao__lista{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projetos__foto{
+        width: 650px;
+        height: 350px;
+    }
+}
+
+
+/* Telas grandes */
+@media (min-width: 1024px) {
+    /* Aqui você pode ajustar ainda mais o design para telas grandes */
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
